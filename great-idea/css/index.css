@@ -200,7 +200,7 @@ html {
   margin-left: 85px;
 }
 
-button {
+.splash button {
   border: 1px solid black;
   text-decoration: none;
   font-size: 20px;
@@ -210,7 +210,7 @@ button {
   margin: 8px auto;
 }
 
-button:hover {
+.splash button:hover {
   color: hotpink;
 }
 
@@ -252,7 +252,6 @@ footer {
   margin-top: 50px;
   text-align: center;
   font-size: 14px;
-  vertical-align: bottom;
 }
 
 .contact {
@@ -278,41 +277,63 @@ footer {
   letter-spacing: 0.1px;
 }
 
- .services-header h2 {
-   font-size: 25px;
-   /* border: 1px solid red; */
-   padding-bottom: 10px;
- }
+.services-header h2 {
+  font-size: 25px;
+  /* border: 1px solid red; */
+  padding-bottom: 10px;
+}
 
- .services-content {
-   border: 1px solid red;
-   display: flex;
-   flex-flow: row wrap;
-   padding: 10px 0px 15px 0px;
-   justify-content: space-between;
-   align-content: flex-start;
-   align-items: flex-start;
- }
- 
- .box {
+.services-content {
+  /* border: 1px solid red; */
   display: flex;
+  flex-flow: row wrap;
+  padding: 10px 0px 15px 0px;
+  justify-content: space-between;
+}
+
+.box {
+  display: flex;
+  flex-flow: column nowrap;
   margin: 20px 0px 20px 0px;
   border: 1px solid black;
-  background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 429px;
-  height: 250px;
+  background: whitesmoke;
+  width: 430px;
+  height: 230px;
   padding: 20px;
- }
+  align-content: flex-start;
+  justify-content: space-between;
+}
 
- .box button {
+.boxbutton {
   border: 1px solid black;
   border-radius: 4px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 12px;
   background: white;
-  padding: 5px 35px 5px 3px;
+  padding: 8px 35px 8px 35px;
   color: black;
- }
+  align-self: flex-start;
+}
+
+.bottomcontent {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+
+.bottomarticle {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.1px;
+  width: 50%;
+  border: 1px solid red;
+  justify-content: space-evenly;
+}
+
+.bottomcontent-list {
+  list-style-position: inside;
+  line-height: 1.5;
+}
